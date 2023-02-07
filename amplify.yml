@@ -32,7 +32,7 @@ test:
         - npx mochawesome-merge cypress/report/mochawesome-report/mochawesome*.json > cypress/report/mochawesome.json
         - pm2 kill
   artifacts:
-    baseDirectory: ./frontend/build
+    baseDirectory: ./next-amplify-poc/build
     configFilePath: '**/mochawesome.json'
     files:
       - '**/*.png'
